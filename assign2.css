@@ -1,0 +1,145 @@
+/* css position */
+.position-static{
+
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid;
+    position: static;
+}
+.position-relative{
+    position: relative;
+    background-color: green;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    border: 1px solid;
+    
+
+}
+.parent-absolute{
+    position: relative;
+    background-color: grey;
+    height: 100px;
+    margin-top: 40px;
+
+}
+.absolute-container{
+    position: absolute;
+    background-color: pink;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+}
+
+/* fixed header */
+.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.fixed-header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+
+}
+/* simple grid */
+.grid-layout{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+.grid-layout{
+    div{
+        background-color: lightcoral;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid;
+    }
+}
+/* youtube card layout */
+.yt-cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+ .yt-thumbnail{
+    position: relative;
+    img{
+        width: 100%;
+
+    }
+}
+.timestamp{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 2px;
+}
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 48px 1fr;
+}
+.channel-profile{
+    padding: 7px 10px 0px 3px;
+    img{
+        width: 36px;
+        border-radius: 50px;
+    
+    }
+
+}
+.video-title{
+    margin-top: 15px;
+    font-weight: bold;
+    
+}
+.channel-name,.video-stats{
+    color: #606060;
+    font-size: 12px;
+
+}
+.yt-thumbnail:hover{
+    transform: scale(1.03);
+    box-shadow: 0 2px 4px rgba(0, 0, 0.2);
+    transition: all 0.3 ease;
+}
+@media screen and (max-width: 480px){
+    .yt-cards-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 20px;
+    
+    }
+} 
+body{
+    font-family: "Playwrite Colombia Guides ";
+}
+
+/* sticky footer */
+.sticky-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
